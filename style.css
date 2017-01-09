@@ -1,0 +1,268 @@
+body {
+    margin: 0 auto;
+    background-color: white;
+    font-family: Verdana,sans-serif;
+    font-size: 14px;
+    min-width: 768px;
+    overflow-x: hidden;
+
+}
+
+
+#logo {
+    margin-top: 25px;
+    width: 180px;
+    height: 180px;
+}
+
+#text_top {
+    width: 70%;
+    float: right;
+    text-align: center;
+    color: #02a0e3;
+    font-size: 250%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Garamond, sans-serif;
+    padding-top: 55px;
+    padding-right: 100px;
+}
+
+#topper {
+    height: 180px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#top_menu {
+    width: 100%;
+    height: 74px;
+    background-color: #d5ffdd;
+    margin-top: 10px;
+    text-align: center;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.5);
+}
+
+#center_block {
+    background: linear-gradient(to bottom, #ffffff, #d5ffdd);
+    min-height: 600px;
+    margin: 20px auto 50px;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.5);
+    width: 85%;
+}
+
+#content_block {
+    width: 67%;
+    min-width: 450px;
+    max-height: 600px;
+    border-right: 1px solid #9a9a9a;
+    overflow-y: auto;
+    box-sizing: border-box;
+    height: 600px;
+}
+
+#announced_block {
+    padding-left: 20px;
+    width: 33%;
+    height: 600px;
+    min-width: 256px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    padding-right: 5px;
+}
+
+.link_a {
+    display: inline-block;
+    float: left;
+    list-style-type: none;
+    width: 140px;
+    height: 74px;
+    box-sizing: border-box;
+    padding-top: 26px;
+    text-decoration: none;
+    color: black;
+}
+
+.link_a:hover {
+    text-decoration: underline;
+}
+
+ul.list > link.link_a:hover {
+    transition: 1s;
+    background-color: #2E3FE3;
+}
+
+#menu_buttons {
+    margin:0 auto;
+    width: 860px;
+}
+
+#footer {
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+    background-color: #d5ffdd;
+    border-top: 1px solid #02a0e3;
+    box-sizing: content-box;
+    min-width: 768px;
+}
+
+ul {
+    list-style: none;
+    display: block;
+    margin:0;
+    padding:0;
+}
+ul:after {
+    display: block;
+    float: none;
+    content: ' ';
+    clear: both;
+}
+ul.list > li {
+    float: left;
+}
+
+ul.list > li > a {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+ul.list > li > a:hover {
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+
+ul.sublist {
+    position: absolute;
+    margin-top: 74px;
+    width: 240px;
+    display: none;
+    background-color: white;
+    box-shadow: -2px 5px 15px -3px rgba(0,0,0,0.5);
+}
+
+ul.sublist > li {
+    display: block;
+}
+
+ul.sublist > li > a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    background-color: #d5ffdd;
+}
+
+ul.sublist > li > a:hover {
+    transition: 0.5s;
+    background-color: #67d6d0;
+    text-decoration: underline;
+}
+ul.list > li:hover > ul.sublist {
+    display: block;
+}
+
+.open_link:hover {
+    transition: 0.5s;
+    background-color: #67d6d0;
+    box-sizing: content-box;
+}
+
+.center_node {
+    width: 100%;
+    float: left;
+}
+
+#footer_title {
+    margin-top: -30px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: center;
+    font-family: "Century Gothic", sans-serif;
+}
+
+#footer_copy {
+    font-family: "Century Gothic", sans-serif;
+}
+
+.center_node_title {
+    font-family: Verdana, sans-serif;
+    text-align: center;
+    font-size: 16px;
+}
+
+.separator {
+    width: 95%;
+}
+
+
+@media screen and (max-width: 1023px) {
+    #announced_block {
+        float: inherit;
+        width: 100%;
+        padding-right: 0;
+        margin-right: 0;
+    }
+
+    #content_block {
+        border-right: 0;
+        width: 100%;
+        padding-right: 0;
+        border-bottom: 1px dashed #9a9a9a;
+        padding-bottom: 15px;
+    }
+
+    #center_block {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 888px){
+    .link_a {
+        width: 130px;
+    }
+
+    #menu_buttons {
+        width: 868px;
+    }
+}
+
+.text_separator {
+    width: 100px;
+}
+
+.text_title {
+    text-decoration: blink;
+    margin-left: 4%;
+    font-style: oblique;
+    font-family: "Century Gothic", sans-serif;
+}
+
+.text {
+    margin: 0 auto;
+    width: 95%;
+    font-family: "Century Gothic", sans-serif;
+}
+
+.text_author {
+    margin-top: 10px;
+    font-family: "Century Gothic", sans-serif;
+    float: right;
+    margin-bottom: 15px;
+    margin-right: 25px;
+}
+
+.admin_author {
+    font-style: oblique;
+    color: #d62002;
+}

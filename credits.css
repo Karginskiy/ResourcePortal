@@ -1,0 +1,26 @@
+#msft_cred {
+    width: 150px;
+}
+
+#mitar_cred {
+    width: 150px;
+}
+
+.credits {
+    vertical-align: middle;
+    margin-bottom: 40px;
+}
+
+.credits:hover {
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
+#footer_credits {
+    width: 100%;
+}
+
+
+#aero_cred {
+    width: 150px;
+}
